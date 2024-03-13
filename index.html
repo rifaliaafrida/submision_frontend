@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="box-nav">
+        <div class="logo">
+          <h1 class="text-logo">BookshelfApps</h1>
+        </div>
+        <input type="search" id="searchInput" placeholder="Ayo cari judul buku di rak kamu">
+        <nav class="list-navbar">
+          <ul class="dekstop-nav-links">
+            <li><a href="#card">Rak buku</a></li>
+            <li><a href="#tambahBuku">Tambah Buku</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+<main>
+    <div class="content1" id="tambahBuku">
+        <article>
+            <p class="welcome"><i>- Selamat Datang</i></p>
+            <h1 class="title">Rak Buku Digital <br>BookshelfApps</h1>
+            <p class="desc">Buat Dan Kelola Rak Buku Digital Anda <br> Menjadi Lebih Mudah dan Rapih Bersama Bookshelf Apps</p>
+            <button class="start-button"><a href=""><strong>Mulai Sekarang</strong></a></button>
+
+        </article>
+    <div class="image-1">
+        <img src="./img/book.png" alt="">
+    </div>
+    </div>
+</main>
+
+<div class="bookadd" id="rakBuku">
+    <h1 class="title-book">Tambahkan buku</h1>
+        <form id="bookForm">
+            <label for="title">Judul:</label>
+            <input type="text" id="title" required>
+            <label for="author">Penulis:</label>
+            <input type="text" id="author" required>
+            <label for="year">Tahun:</label>
+            <input type="text" id="year" required>
+            <label for="isComplete">Buku ini selesai dibaca</label>
+            <input type="checkbox" id="isComplete">
+            <button type="submit" class="add" >Tambah Buku</button>
+        </form>
+    </div>
+
+<div class="book-etalase">
+    <h1 class="title-book2">Rak Buku</h1>
+    <div class="container" id="card">
+        <div class="shelf" id="unfinishedShelf">
+            <h2>Belum selesai dibaca</h2>
+            <div id="unfinishedList" class="bookshelf"></div>
+        </div>
+        <div class="shelf" id="finishedShelf">
+            <h2>Selesai dibaca</h2>
+            <div id="finishedList" class="bookshelf"></div>
+</div>
+<script src="./script/appscript.js"></script>
+</body>
+</html>
